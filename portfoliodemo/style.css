@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     background-color: aliceblue;
 width:100%;
@@ -11,12 +13,15 @@ box-sizing: border-box;
 font-size: 14px; 
 color: #555;*/
  };
+
  body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Roboto', sans-serif; 
+
 }
 
  @keyframes slide {
@@ -38,8 +43,13 @@ color: #555;*/
     display: block;
     overflow:hidden;
     color: rgb(59, 83, 84);
-    width: 4000px;
+    width: 3500px;
     height: 4000px;
+    /* padding: 0;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    color: #333;
+    font-size: 20px; */
 
 }
 
@@ -48,12 +58,16 @@ color: #555;*/
     display:in-block;
     flex: 50 10 50%;
     animation: slide 45s infinite;
-    width:550px;
-    height:550px;
-    margin: 0 20px;
-    display:inline-block;
+    width:350px;
+    height:350px;
+    margin:  0;
+    padding: 0;
+    border-radius: 10px;
+    color:deepskyblue;
     background-color: cadetblue;
-}
+};
+
+
 
 
 

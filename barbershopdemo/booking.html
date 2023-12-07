@@ -1,10 +1,12 @@
+<!-- booking.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now - Barber Shop</title>
+    <title>Book Now - Hair Dresser Stylish & My Curls</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -13,35 +15,65 @@
     <header>
         <!-- Navigation Header -->
         <div class="container">
-            <div id="logo">Hair dresser stylish & My curls</div>
+            <div id="logo">Hair Dresser Stylish & My Curls</div>
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./booking.html">Book Now</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="./promotion.html">promotion</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./testimonials.html">Testimonials</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./index.html" class="nav-button">Home</a></li>
+                    <li><a href="./about.html" class="nav-button">About Us</a></li>
+                    <li><a href="./services.html" class="nav-button">Services</a></li>
+                    <li><a href="./booking.html" class="nav-button">Book Now</a></li>
+                    <li><a href="./gallery.html" class="nav-button">Gallery</a></li>
+                    <li><a href="./promotion.html" class="nav-button">Promotion</a></li>
+                    <li><a href="./blog.html" class="nav-button">Blog</a></li>
+                    <li><a href="./testimonials.html" class="nav-button">Testimonials</a></li>
+                    <li><a href="./contact.html" class="nav-button">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="booking">
+    <section id="book-now">
         <div class="container">
             <h2>Book Now</h2>
-            
-            <!-- Booking System Implementation (JavaScript required) -->
 
+            <form action="#" method="POST" id="booking-form">
+                <label for="service">Select Service:</label>
+                <select name="service" id="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="braiding">Braiding</option>
+                    <option value="styling">Natural Hair Styling</option>
+                    <option value="styling">cornrows</option>
+                    <!-- Add more services as needed -->
+                </select>
+
+                <label for="barber">Select Stylist:</label>
+                <select name="barber" id="barber" required>
+                    <option value="" disabled selected>Select your Stylist</option>
+                    <option value="founders">Founders (Sofia and Irene Ukpebor)</option>
+                    <option value="mercy">Mercy Abolade</option>
+                    <option value="yannis">Yannis</option>
+                    <option value="maggie">maggie</option>
+                    <option value="beatrice">beatrice</option>
+                   
+                    <!-- Add more barbers as needed -->
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" name="date" id="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" name="time" id="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <!-- Footer content goes here -->
+            <h2>developed by <a href="https://www.linkedin.com/in/ailedoreen-oliha-62106b253/"><b>DOREEN CODES</b></a>2023</h2>
         </div>
     </footer>
 

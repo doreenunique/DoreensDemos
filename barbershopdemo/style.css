@@ -4,8 +4,29 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    /* background-image: url(https://cdn-fmbfn.nitrocdn.com/pGOBpQfJThyXXDexFgWLqDDyZDPPOFTT/assets/static/optimized/rev-e7c4bd5/wp-content/uploads/2021/08/hairdresser-1-1.png);
+    background-repeat:no-repeat;
+    /* background-size: cover;
+    background-position: center;
+    filter: blur(5px);  */ 
 }
 
+
+body::before {
+    content: "";
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo-element behind the content */
+    background-image: url(https://cdn-fmbfn.nitrocdn.com/pGOBpQfJThyXXDexFgWLqDDyZDPPOFTT/assets/static/optimized/rev-e7c4bd5/wp-content/uploads/2021/08/hairdresser-1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    background-position: center;
+    filter: blur(15px); /* Adjust the blur value as needed */
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -28,6 +49,25 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
+
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+/* ... (existing styles) ... */
+
 
 /* Footer Styles */
 footer {
@@ -65,6 +105,9 @@ footer {
 .service {
     margin-top: 30px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
 }
 
 .service img {
@@ -152,6 +195,7 @@ footer {
 
 .testimonial {
     text-align: center;
+    font-weight:300;
 }
 
 .testimonial img {
@@ -171,6 +215,7 @@ footer {
 
 .blog-post {
     margin-top: 30px;
+    font-weight:300;
 }
 
 .blog-post img {
@@ -191,6 +236,7 @@ footer {
 
 #contact h2 {
     text-align: center;
+    font-weight:300;
 }
 
 .contact-details,
@@ -202,5 +248,32 @@ footer {
     margin-top: 30px;
 }
 
-/* Add more styles as needed */
+/* About page styles */
+.history {
+    color:rgb(7, 7, 7) ;
+    font: 1em sans-serif;
+    font-weight:300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barber {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage and margin as needed */
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+}  
+
+.barber-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.barber img {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
